@@ -4,6 +4,7 @@ class Patient {
   String name;
   int age;
   String gender;
+  bool isdanger;
   int bedNo;
   DateTime dateOfAdmit;
   DateTime dateOfBirth;
@@ -20,6 +21,7 @@ class Patient {
     required this.age,
     required this.gender,
     required this.bedNo,
+    required this.isdanger,
     required this.dateOfAdmit,
     required this.dateOfBirth,
     required this.height,
@@ -38,6 +40,7 @@ class Patient {
       age: map['age'],
       gender: map['gender'],
       bedNo: map['bedNo'],
+      isdanger: map['isDanger'],
       dateOfAdmit: DateTime.parse(map['dateOfAdmit']),
       dateOfBirth: DateTime.parse(map['dateOfBirth']),
       height: map['height'],
@@ -57,6 +60,7 @@ class Patient {
       'age': age,
       'gender': gender,
       'bedNo': bedNo,
+      'isDanger': isdanger,
       'dateOfAdmit': dateOfAdmit.toIso8601String(),
       'dateOfBirth': dateOfBirth.toIso8601String(),
       'height': height,
@@ -71,6 +75,6 @@ class Patient {
 
   @override
   String toString() {
-    return 'Patient{name: $name, age: $age, gender: $gender, bedNo: $bedNo, dateOfAdmit: $dateOfAdmit, dateOfBirth: $dateOfBirth, height: $height, weight: $weight, address: $address, medicalHistory: $medicalHistory, bodyTemperature: $bodyTemperature, spo2: $spo2, pulseRate: $pulseRate}';
+    return 'Patient{name: $name, age: $age, gender: $gender, bedNo: $bedNo,isDanger: $isdanger, dateOfAdmit: $dateOfAdmit, dateOfBirth: $dateOfBirth, height: $height, weight: $weight, address: $address, medicalHistory: $medicalHistory, bodyTemperature: $bodyTemperature, spo2: $spo2, pulseRate: $pulseRate}';
   }
 }
