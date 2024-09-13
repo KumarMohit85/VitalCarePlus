@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vital_plus/homepage.dart';
+import 'package:vital_plus/models/_homepage.dart';
 import 'package:vital_plus/screen_test.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Homepage(),
+      home: HomePage2(),
     );
   }
 }
